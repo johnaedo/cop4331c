@@ -20,7 +20,7 @@ Make sure you are logged in to your Digital Ocean account. Go to [https://market
 
 ### Create a LAMP Droplet
 
-![ee5e8f187883bf66360d9d2099e8487d_MD5](../../_assets/images/ee5e8f187883bf66360d9d2099e8487d_MD5.png)
+![ee5e8f187883bf66360d9d2099e8487d_MD5.png](../../_assets/images/ee5e8f187883bf66360d9d2099e8487d_MD5.png)
 
 
 ### Select Your Region and Datacenter
@@ -30,7 +30,7 @@ Make sure you are logged in to your Digital Ocean account. Go to [https://market
 #### Scroll Down!
 ### Select Ubuntu, Basic Plan...
 
-![854eac4b9d987948a953518347c73b7b_MD5](../../_assets/images/854eac4b9d987948a953518347c73b7b_MD5.png)
+![854eac4b9d987948a953518347c73b7b_MD5.png](../../_assets/images/854eac4b9d987948a953518347c73b7b_MD5.png)
 
 ### Configure your Storage, CPU, and Transfer Plan
 
@@ -122,14 +122,14 @@ You can access this via a web browser. Open a browser and type in your URL using
 
 In your browser, you should now see:
 
-![2b0813940c7649f4ccd4b77803fd84bb_MD5](../../_assets/images/2b0813940c7649f4ccd4b77803fd84bb_MD5.png)
+![2b0813940c7649f4ccd4b77803fd84bb_MD5.png](../../_assets/images/2b0813940c7649f4ccd4b77803fd84bb_MD5.png)
 
 Now for a domain, since we don't want to by typing an IP address every time you access your app. You cannot buy a domain through Digital Ocean. Choose another domain registrant. The example below uses GoDaddy, but there are lots of them. Purchase a domain and point the domain to your Digital Ocean applet. Below are the steps taken on GoDaddy.
 
 
 1. **I already had this domain purchased:**
 
-![853857a8316814d01046a5d00a4c1686_MD5](../../_assets/images/853857a8316814d01046a5d00a4c1686_MD5.png)
+![853857a8316814d01046a5d00a4c1686_MD5.png](../../_assets/images/853857a8316814d01046a5d00a4c1686_MD5.png)
 
 2. **Navigate to the DNS manager:**
 
@@ -138,11 +138,11 @@ Now for a domain, since we don't want to by typing an IP address every time you 
 
 3. **Edit the IP address and save:**
 
-![4650861af1e276d67ec235154edebbc5_MD5](../../_assets/images/4650861af1e276d67ec235154edebbc5_MD5.png)
+![4650861af1e276d67ec235154edebbc5_MD5.png](../../_assets/images/4650861af1e276d67ec235154edebbc5_MD5.png)
 
 4. **Test with a browser. It might take a few minutes to propagate. (On Windows it is helpful to go to a command prompt and type ipconfig /flushdns) You might also want to use Ctrl-F5 to hard reset the web content.**  Note that on campus, DNS propagation for new URLs can take up to a full business day.  ***DO NOT attempt to configure your domain names on campus with any sort of urgency.***
 
-![a1f21c23baa7e00a902dba79ee912ace_MD5](../../_assets/images/a1f21c23baa7e00a902dba79ee912ace_MD5.png)
+![a1f21c23baa7e00a902dba79ee912ace_MD5.png](../../_assets/images/a1f21c23baa7e00a902dba79ee912ace_MD5.png)
 
 ## Working with the Database (mySQL)
 
