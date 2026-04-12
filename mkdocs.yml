@@ -1,7 +1,7 @@
-site_name: $site_name # Change this to your site name
-site_description: $site_description
-site_url: $site_url # Change this to your site URL
-site_author: $site_author
+site_name: COP 4331C: Processes of Object Oriented Software Design # Change this to your site name
+site_description: Course notes, code demos, and tutorials
+site_url: https://johnaedo.github.io/cop4331c # Change this to your site URL
+site_author: Dr. John Aedo
 
 theme:
     name: 'material'
