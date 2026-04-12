@@ -6,23 +6,23 @@ on:
       site_name:
         type: string
         required: true
-        description: "The name of the site"
+        description: "COP 4331C: Processes of Object Oriented Software Development"
       site_url:
         type: string
         required: true
-        description: "The url of the site"
+        description: "https://johnaedo.github.io/cop4331c"
       site_description:
         type: string
         required: true
-        description: "The description of the site"
+        description: "Course notes, code demos, and tutorials"
       site_author:
         type: string
         required: true
-        description: "The author of the site"
+        description: "Dr. John Aedo"
       language:
         type: string
         required: true
-        description: "The language of the site"
+        description: "US-EN"
       auto_h1:
         type: boolean
         required: false
