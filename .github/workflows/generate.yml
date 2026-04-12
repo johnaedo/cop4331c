@@ -131,7 +131,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
       - name: AutoMerging
         id: automerge
-        if: ${{ inputs.AUTO_MERGE }}
+        if: ${{ inputs.auto_merge && steps.cpr.outputs.pull-request-number != '' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
         run: |
@@ -139,14 +139,14 @@ jobs:
           echo "Pull Request merged"
           echo "done=true" >> $GITHUB_OUTPUT
       - name: Delete update branch if possible
-        if: ${{ inputs.AUTO_MERGE && steps.automerge.outputs.done == 'true' }}
+        if: ${{ inputs.auto_merge && steps.automerge.outputs.done == 'true' }}
         run: |
           # verify if the branch exists
           if [[ $(git ls-remote --heads origin generate | wc -l) -eq 1 ]]; then
             git push origin --delete generate
           fi
       - name: deploy
-        if: ${{ inputs.AUTO_MERGE && steps.automerge.outputs.done == 'true' }}
+        if: ${{ inputs.auto_merge && steps.automerge.outputs.done == 'true' }}
         run: |
           echo "Deploying"
           uv run mkdocs gh-deploy --force
