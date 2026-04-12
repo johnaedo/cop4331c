@@ -127,9 +127,9 @@ jobs:
         run: uv python install 3.13
 
       - name: Install dependencies
-        run: uv sync
+        run: uv sync --python 3.13
 
       - name: Build and deploy
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
-        run: uv run mkdocs gh-deploy --force
+        run: uv run --python 3.13 mkdocs gh-deploy --force
