@@ -1,20 +1,17 @@
-
 <!DOCTYPE html>
-
-<html class="no-js" lang="en">
-<head>
+<html class="no-js" lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <meta content="Course notes, code demos, and tutorials" name="description"/>
 <meta content="Dr. John Aedo" name="author"/>
 <link href="https://johnaedo.github.io/cop4331c/Code%20Demos%20and%20Tutorials/MERN%20Stack/Getting%20Started%20with%20MERN%20A%20%28version%202.0%29/" rel="canonical"/>
 <link href="../../LAMP%20Stack/Getting%20Started%20with%20LAMP/" rel="prev"/>
-<link href="../../../blog/" rel="next"/>
+<link href="../../../Lecture%20Slides/Cypress%20Testing%20Guide/" rel="next"/>
 <link href="../../../_assets/meta/favicons.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.6.16" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.6" name="generator"/>
 <title>Getting Started with MERN A (version 2.0) - COP 4331C - Processes of Object Oriented Software Design</title>
-<link href="../../../assets/stylesheets/main.7e37652d.min.css" rel="stylesheet"/>
-<link href="../../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/main.484c7ddc.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Karla:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Karla";--md-code-font:"Ubuntu Mono"}</style>
@@ -38,16 +35,17 @@
 <meta content="Course notes, code demos, and tutorials" name="og:description"/>
 <meta content="Course notes, code demos, and tutorials" name="twitter:description"/>
 <script> document.title = "Getting Started with MERN A (version 2.0)" </script>
-<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
-    html.glightbox-open { overflow: initial; height: 100%; }
-    .gslide-title { margin-top: 0px; user-select: text; }
-    .gslide-desc { color: #666; user-select: text; }
-    .gslide-image img { background: white; }
-    .gscrollbar-fixer { padding-right: 15px; }
-    .gdesc-inner { font-size: 0.75rem; }
-    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
-    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
-    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../../../assets/javascripts/glightbox.min.js"></script></head>
+<link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><script src="../../../assets/javascripts/glightbox.min.js"></script><style id="glightbox-style">
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color); }
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color); }
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color); }
+        </style></head>
 <body data-md-color-accent="light-blue" data-md-color-primary="teal" data-md-color-scheme="default" dir="ltr">
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -131,7 +129,11 @@
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../../..">
-<svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
+        
+  
+    
+      
+      404: Not Found
     
   
   Home
@@ -140,7 +142,11 @@
 </li>
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../../../tags/">
-<svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
+        
+  
+    
+      
+      404: Not Found
     
   
   Tags
@@ -149,7 +155,11 @@
 </li>
 <li class="md-tabs__item md-tabs__item--active">
 <a class="md-tabs__link" href="../../LAMP%20Stack/Getting%20Started%20with%20LAMP/">
-<svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
+          
+  
+    
+      
+      404: Not Found
     
   
   Code Demos and Tutorials
@@ -157,8 +167,25 @@
         </a>
 </li>
 <li class="md-tabs__item">
+<a class="md-tabs__link" href="../../../Lecture%20Slides/Cypress%20Testing%20Guide/">
+          
+  
+    
+      
+      404: Not Found
+    
+  
+  Lecture Slides
+
+        </a>
+</li>
+<li class="md-tabs__item">
 <a class="md-tabs__link" href="../../../blog/">
-<svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
+          
+  
+    
+      
+      404: Not Found
     
   
   Blog
@@ -185,16 +212,24 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../..">
-<svg height="18" viewbox="0 0 1024 1024" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M843.5 737.4c-12.4-75.2-79.2-129.1-155.3-125.4S550.9 676 546 752c-153.5-4.8-208-40.7-199.1-113.7c3.3-27.3 19.8-41.9 50.1-49c18.4-4.3 38.8-4.9 57.3-3.2c1.7.2 3.5.3 5.2.5c11.3 2.7 22.8 5 34.3 6.8c34.1 5.6 68.8 8.4 101.8 6.6c92.8-5 156-45.9 159.2-132.7c3.1-84.1-54.7-143.7-147.9-183.6c-29.9-12.8-61.6-22.7-93.3-30.2c-14.3-3.4-26.3-5.7-35.2-7.2c-7.9-75.9-71.5-133.8-147.8-134.4S189.7 168 180.5 243.8s40 146.3 114.2 163.9s149.9-23.3 175.7-95.1c9.4 1.7 18.7 3.6 28 5.8c28.2 6.6 56.4 15.4 82.4 26.6c70.7 30.2 109.3 70.1 107.5 119.9c-1.6 44.6-33.6 65.2-96.2 68.6c-27.5 1.5-57.6-.9-87.3-5.8c-8.3-1.4-15.9-2.8-22.6-4.3c-3.9-.8-6.6-1.5-7.8-1.8l-3.1-.6c-2.2-.3-5.9-.8-10.7-1.3c-25-2.3-52.1-1.5-78.5 4.6c-55.2 12.9-93.9 47.2-101.1 105.8c-15.7 126.2 78.6 184.7 276 188.9c29.1 70.4 106.4 107.9 179.6 87c73.3-20.9 119.3-93.4 106.9-168.6M329.1 345.2c-46 0-83.3-37.3-83.3-83.3s37.3-83.3 83.3-83.3s83.3 37.3 83.3 83.3s-37.3 83.3-83.3 83.3M695.6 845c-46 0-83.3-37.3-83.3-83.3s37.3-83.3 83.3-83.3s83.3 37.3 83.3 83.3s-37.3 83.3-83.3 83.3" fill="currentColor"></path></svg>
-<span class="md-ellipsis">
+        
+  
+    
+    404: Not Found
+  
+  <span class="md-ellipsis">
     Home
   </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../../tags/">
-<svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
-<span class="md-ellipsis">
+        
+  
+    
+    404: Not Found
+  
+  <span class="md-ellipsis">
     Tags
   </span>
 </a>
@@ -202,8 +237,12 @@
 <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
 <input checked="" class="md-nav__toggle md-toggle" id="__nav_3" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
-<svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
-<span class="md-ellipsis">
+            
+  
+    
+    404: Not Found
+  
+  <span class="md-ellipsis">
     Code Demos and Tutorials
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -217,8 +256,12 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_3_1" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
-<svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
-<span class="md-ellipsis">
+            
+  
+    
+    404: Not Found
+  
+  <span class="md-ellipsis">
     LAMP Stack
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -231,8 +274,12 @@
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../LAMP%20Stack/Getting%20Started%20with%20LAMP/">
-<svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
-<span class="md-ellipsis">
+        
+  
+    
+    404: Not Found
+  
+  <span class="md-ellipsis">
     Getting Started with LAMP
   </span>
 </a>
@@ -243,8 +290,12 @@
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
 <input checked="" class="md-nav__toggle md-toggle" id="__nav_3_2" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
-<svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
-<span class="md-ellipsis">
+            
+  
+    
+    404: Not Found
+  
+  <span class="md-ellipsis">
     MERN Stack
   </span>
 <span class="md-nav__icon md-icon"></span>
@@ -258,15 +309,23 @@
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" id="__toc" type="checkbox"/>
 <label class="md-nav__link md-nav__link--active" for="__toc">
-<svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
-<span class="md-ellipsis">
+          
+  
+    
+    404: Not Found
+  
+  <span class="md-ellipsis">
     Getting Started with MERN A (version 2.0)
   </span>
 <span class="md-nav__icon md-icon"></span>
 </label>
 <a class="md-nav__link md-nav__link--active" href="./">
-<svg fill="currentColor" height="16px" viewbox="0 0 24 24" width="16px" xmlns="http://www.w3.org/2000/svg"><path d="M19.903 8.586a.997.997 0 0 0-.196-.293l-6-6a.997.997 0 0 0-.293-.196c-.03-.014-.062-.022-.094-.033a.991.991 0 0 0-.259-.051C13.04 2.011 13.021 2 13 2H6c-1.103 0-2 .897-2 2v16c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2V9c0-.021-.011-.04-.013-.062a.952.952 0 0 0-.051-.259c-.01-.032-.019-.063-.033-.093zM16.586 8H14V5.414L16.586 8zM6 20V4h6v5a1 1 0 0 0 1 1h5l.002 10H6z"></path><path d="M8 12h8v2H8zm0 4h8v2H8zm0-8h2v2H8z"></path></svg>
-<span class="md-ellipsis">
+        
+  
+    
+    404: Not Found
+  
+  <span class="md-ellipsis">
     Getting Started with MERN A (version 2.0)
   </span>
 </a>
@@ -279,7 +338,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#the-development-environment">
 <span class="md-ellipsis">
-      The Development Environment
+      
+        The Development Environment
+      
     </span>
 </a>
 <nav aria-label="The Development Environment" class="md-nav">
@@ -287,21 +348,27 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#client-software">
 <span class="md-ellipsis">
-      Client Software
+      
+        Client Software
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#development-tools">
 <span class="md-ellipsis">
-      Development Tools
+      
+        Development Tools
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#development-platform">
 <span class="md-ellipsis">
-      Development Platform
+      
+        Development Platform
+      
     </span>
 </a>
 </li>
@@ -311,14 +378,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#the-mern-architecture">
 <span class="md-ellipsis">
-      The MERN Architecture
+      
+        The MERN Architecture
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#install-node-version-manager">
 <span class="md-ellipsis">
-      Install Node Version Manager
+      
+        Install Node Version Manager
+      
     </span>
 </a>
 <nav aria-label="Install Node Version Manager" class="md-nav">
@@ -326,7 +397,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#run-the-nvm-install-script">
 <span class="md-ellipsis">
-      Run the NVM install script
+      
+        Run the NVM install script
+      
     </span>
 </a>
 </li>
@@ -336,21 +409,27 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#install-nodemon">
 <span class="md-ellipsis">
-      Install Nodemon
+      
+        Install Nodemon
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#the-cards-application">
 <span class="md-ellipsis">
-      The Cards Application
+      
+        The Cards Application
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#setting-up-the-front-end">
 <span class="md-ellipsis">
-      Setting up the Front End
+      
+        Setting up the Front End
+      
     </span>
 </a>
 <nav aria-label="Setting up the Front End" class="md-nav">
@@ -358,14 +437,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-the-app-directory">
 <span class="md-ellipsis">
-      Create the App Directory
+      
+        Create the App Directory
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#scaffold-the-front-end-for-the-cards-app">
 <span class="md-ellipsis">
-      Scaffold the Front End for the Cards App
+      
+        Scaffold the Front End for the Cards App
+      
     </span>
 </a>
 <nav aria-label="Scaffold the Front End for the Cards App" class="md-nav">
@@ -373,7 +456,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#the-vite-dev-server">
 <span class="md-ellipsis">
-      The Vite Dev Server
+      
+        The Vite Dev Server
+      
     </span>
 </a>
 </li>
@@ -383,21 +468,27 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-the-necessary-directories">
 <span class="md-ellipsis">
-      Create the necessary directories
+      
+        Create the necessary directories
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#run-visual-studio-code">
 <span class="md-ellipsis">
-      Run Visual Studio Code
+      
+        Run Visual Studio Code
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-react-components-and-pages">
 <span class="md-ellipsis">
-      Add React Components and Pages
+      
+        Add React Components and Pages
+      
     </span>
 </a>
 <nav aria-label="Add React Components and Pages" class="md-nav">
@@ -405,7 +496,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-the-pagetitle-and-login-react-components">
 <span class="md-ellipsis">
-      Create the PageTitle and Login React Components
+      
+        Create the PageTitle and Login React Components
+      
     </span>
 </a>
 <nav aria-label="Create the PageTitle and Login React Components" class="md-nav">
@@ -413,14 +506,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#pagetitletsx">
 <span class="md-ellipsis">
-      PageTitle.tsx
+      
+        PageTitle.tsx
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#logintsx">
 <span class="md-ellipsis">
-      Login.tsx
+      
+        Login.tsx
+      
     </span>
 </a>
 </li>
@@ -430,7 +527,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-the-login-page-itself">
 <span class="md-ellipsis">
-      Create the Login Page Itself
+      
+        Create the Login Page Itself
+      
     </span>
 </a>
 <nav aria-label="Create the Login Page Itself" class="md-nav">
@@ -438,7 +537,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#loginpagetsx">
 <span class="md-ellipsis">
-      LoginPage.tsx
+      
+        LoginPage.tsx
+      
     </span>
 </a>
 </li>
@@ -448,7 +549,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-apptsx-to-load-the-loginpage-component">
 <span class="md-ellipsis">
-      Update App.tsx to load the LoginPage Component
+      
+        Update App.tsx to load the LoginPage Component
+      
     </span>
 </a>
 <nav aria-label="Update App.tsx to load the LoginPage Component" class="md-nav">
@@ -456,7 +559,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#apptsx">
 <span class="md-ellipsis">
-      App.tsx
+      
+        App.tsx
+      
     </span>
 </a>
 </li>
@@ -472,14 +577,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test-the-front-end">
 <span class="md-ellipsis">
-      Test the Front End
+      
+        Test the Front End
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#setting-up-the-back-end">
 <span class="md-ellipsis">
-      Setting up the Back End
+      
+        Setting up the Back End
+      
     </span>
 </a>
 <nav aria-label="Setting up the Back End" class="md-nav">
@@ -487,28 +596,36 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-the-backend-folder-under-your-cards-project-folder-and-initialize-the-project">
 <span class="md-ellipsis">
-      Create the backend folder under your cards project folder and initialize the project
+      
+        Create the backend folder under your cards project folder and initialize the project
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#install-dependencies">
 <span class="md-ellipsis">
-      Install Dependencies
+      
+        Install Dependencies
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-a-nodemon-run-option">
 <span class="md-ellipsis">
-      Add a nodemon run option
+      
+        Add a nodemon run option
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-serverjs">
 <span class="md-ellipsis">
-      Create server.js
+      
+        Create server.js
+      
     </span>
 </a>
 </li>
@@ -518,14 +635,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test-your-server">
 <span class="md-ellipsis">
-      Test your server
+      
+        Test your server
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#initialize-your-git-repos">
 <span class="md-ellipsis">
-      Initialize your git repos
+      
+        Initialize your git repos
+      
     </span>
 </a>
 <nav aria-label="Initialize your git repos" class="md-nav">
@@ -533,14 +654,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#the-front-end">
 <span class="md-ellipsis">
-      The Front End
+      
+        The Front End
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#the-back-end">
 <span class="md-ellipsis">
-      The Back End
+      
+        The Back End
+      
     </span>
 </a>
 <nav aria-label="The Back End" class="md-nav">
@@ -548,7 +673,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#generate-gitignore-file">
 <span class="md-ellipsis">
-      Generate .gitignore File
+      
+        Generate .gitignore File
+      
     </span>
 </a>
 <nav aria-label="Generate .gitignore File" class="md-nav">
@@ -556,14 +683,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#frameworks-languages">
 <span class="md-ellipsis">
-      Frameworks &amp; Languages
+      
+        Frameworks &amp; Languages
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#file-types-and-categories">
 <span class="md-ellipsis">
-      File Types and Categories
+      
+        File Types and Categories
+      
     </span>
 </a>
 </li>
@@ -573,7 +704,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#initialize-the-repo">
 <span class="md-ellipsis">
-      Initialize the Repo
+      
+        Initialize the Repo
+      
     </span>
 </a>
 </li>
@@ -586,7 +719,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#finish-up-the-front-end">
 <span class="md-ellipsis">
-      Finish Up the Front End
+      
+        Finish Up the Front End
+      
     </span>
 </a>
 <nav aria-label="Finish Up the Front End" class="md-nav">
@@ -594,14 +729,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-loggedinname-component">
 <span class="md-ellipsis">
-      Add LoggedInName Component
+      
+        Add LoggedInName Component
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test">
 <span class="md-ellipsis">
-      Test
+      
+        Test
+      
     </span>
 </a>
 </li>
@@ -611,7 +750,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#routing-and-state">
 <span class="md-ellipsis">
-      Routing and State
+      
+        Routing and State
+      
     </span>
 </a>
 <nav aria-label="Routing and State" class="md-nav">
@@ -619,28 +760,36 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#install-react-router-dom">
 <span class="md-ellipsis">
-      Install react-router-dom
+      
+        Install react-router-dom
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#replace-apptsx-to-use-routing">
 <span class="md-ellipsis">
-      Replace App.tsx to use Routing
+      
+        Replace App.tsx to use Routing
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test_1">
 <span class="md-ellipsis">
-      Test
+      
+        Test
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-state-and-routing-to-logintsx">
 <span class="md-ellipsis">
-      Add state and routing to Login.tsx
+      
+        Add state and routing to Login.tsx
+      
     </span>
 </a>
 <nav aria-label="Add state and routing to Login.tsx" class="md-nav">
@@ -648,49 +797,63 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-state-to-logintsx">
 <span class="md-ellipsis">
-      Add state to Login.tsx
+      
+        Add state to Login.tsx
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-routing-to-logintsx">
 <span class="md-ellipsis">
-      Add routing to Login.tsx
+      
+        Add routing to Login.tsx
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#initialize-routing-and-state-handlers">
 <span class="md-ellipsis">
-      Initialize Routing and State Handlers
+      
+        Initialize Routing and State Handlers
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-calls-to-event-handlers-to-the-login-input-elements">
 <span class="md-ellipsis">
-      Add Calls to Event Handlers to the Login input elements
+      
+        Add Calls to Event Handlers to the Login input elements
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#edit-span-to-add-the-result-message">
 <span class="md-ellipsis">
-      Edit span to add the result message
+      
+        Edit span to add the result message
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-event-handler-functions-to-update-state">
 <span class="md-ellipsis">
-      Add Event Handler functions to update State
+      
+        Add Event Handler functions to update State
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-a-feedback-pop-up-to-the-dologin-function">
 <span class="md-ellipsis">
-      Add a feedback pop-up to the doLogin() function
+      
+        Add a feedback pop-up to the doLogin() function
+      
     </span>
 </a>
 </li>
@@ -700,7 +863,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-state-to-carduitsx">
 <span class="md-ellipsis">
-      Add state to CardUI.tsx
+      
+        Add state to CardUI.tsx
+      
     </span>
 </a>
 <nav aria-label="Add state to CardUI.tsx" class="md-nav">
@@ -708,28 +873,36 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#initialize-state-handlers">
 <span class="md-ellipsis">
-      Initialize State Handlers
+      
+        Initialize State Handlers
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-feedback-and-calls-to-event-handlers-to-the-form">
 <span class="md-ellipsis">
-      Add Feedback and Calls to Event Handlers to the Form
+      
+        Add Feedback and Calls to Event Handlers to the Form
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-the-event-handler-functions">
 <span class="md-ellipsis">
-      Add the Event Handler functions
+      
+        Add the Event Handler functions
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-addcard-and-searchcard-to-print-the-input-values">
 <span class="md-ellipsis">
-      Update addCard and searchCard to print the input values
+      
+        Update addCard and searchCard to print the input values
+      
     </span>
 </a>
 </li>
@@ -739,7 +912,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test_2">
 <span class="md-ellipsis">
-      Test
+      
+        Test
+      
     </span>
 </a>
 </li>
@@ -749,14 +924,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#dont-forget-to-commit">
 <span class="md-ellipsis">
-      Don’t forget to commit!
+      
+        Don’t forget to commit!
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#api-without-database-access">
 <span class="md-ellipsis">
-      API without Database Access
+      
+        API without Database Access
+      
     </span>
 </a>
 <nav aria-label="API without Database Access" class="md-nav">
@@ -764,14 +943,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-sample-data">
 <span class="md-ellipsis">
-      Add Sample Data
+      
+        Add Sample Data
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-api-endpoints">
 <span class="md-ellipsis">
-      Add API Endpoints
+      
+        Add API Endpoints
+      
     </span>
 </a>
 <nav aria-label="Add API Endpoints" class="md-nav">
@@ -779,21 +962,27 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#endpoint-for-adding-a-card">
 <span class="md-ellipsis">
-      Endpoint for Adding a Card
+      
+        Endpoint for Adding a Card
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#endpoint-for-login">
 <span class="md-ellipsis">
-      Endpoint for Login
+      
+        Endpoint for Login
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#endpoint-for-searching-cards">
 <span class="md-ellipsis">
-      Endpoint for Searching Cards
+      
+        Endpoint for Searching Cards
+      
     </span>
 </a>
 </li>
@@ -803,7 +992,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test-with-postman">
 <span class="md-ellipsis">
-      Test with Postman
+      
+        Test with Postman
+      
     </span>
 </a>
 <nav aria-label="Test with Postman" class="md-nav">
@@ -811,21 +1002,27 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#for-apilogin">
 <span class="md-ellipsis">
-      for /api/login:
+      
+        for /api/login:
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#for-apiaddcard">
 <span class="md-ellipsis">
-      for /api/addcard:
+      
+        for /api/addcard:
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#for-apisearchcards">
 <span class="md-ellipsis">
-      for /api/searchcards:
+      
+        for /api/searchcards:
+      
     </span>
 </a>
 </li>
@@ -838,7 +1035,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-login-to-use-the-api">
 <span class="md-ellipsis">
-      Update Login to use the API
+      
+        Update Login to use the API
+      
     </span>
 </a>
 <nav aria-label="Update Login to use the API" class="md-nav">
@@ -846,28 +1045,36 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#replace-dologin-in-logintsx">
 <span class="md-ellipsis">
-      Replace doLogin() in Login.tsx
+      
+        Replace doLogin() in Login.tsx
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test-login-httplocalhost5173login">
 <span class="md-ellipsis">
-      Test login http://localhost:5173/login
+      
+        Test login http://localhost:5173/login
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-carduitsx-to-use-the-api">
 <span class="md-ellipsis">
-      Update CardUI.tsx to use the API
+      
+        Update CardUI.tsx to use the API
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test_3">
 <span class="md-ellipsis">
-      Test
+      
+        Test
+      
     </span>
 </a>
 </li>
@@ -877,7 +1084,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-mongodb-cluster">
 <span class="md-ellipsis">
-      Create MongoDB Cluster
+      
+        Create MongoDB Cluster
+      
     </span>
 </a>
 <nav aria-label="Create MongoDB Cluster" class="md-nav">
@@ -885,63 +1094,81 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-a-cluster">
 <span class="md-ellipsis">
-      Create a Cluster
+      
+        Create a Cluster
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#setup-your-user">
 <span class="md-ellipsis">
-      Setup your user
+      
+        Setup your user
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#choose-a-connection-method">
 <span class="md-ellipsis">
-      Choose a Connection Method
+      
+        Choose a Connection Method
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-network-access-settings">
 <span class="md-ellipsis">
-      Update Network Access settings
+      
+        Update Network Access settings
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-serverjs-with-the-database-connection-code">
 <span class="md-ellipsis">
-      Update server.js with the database connection code
+      
+        Update server.js with the database connection code
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#remove-the-cardlist-array">
 <span class="md-ellipsis">
-      Remove the cardList array
+      
+        Remove the cardList array
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-the-login-route-to-use-mongodb-for-the-user-store">
 <span class="md-ellipsis">
-      Update the login route to use MongoDB for the user store
+      
+        Update the login route to use MongoDB for the user store
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-loggedinname">
 <span class="md-ellipsis">
-      Update LoggedInName
+      
+        Update LoggedInName
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test_4">
 <span class="md-ellipsis">
-      Test
+      
+        Test
+      
     </span>
 </a>
 </li>
@@ -959,27 +1186,69 @@
 </li>
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" id="__nav_4" type="checkbox"/>
+<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+    
+    404: Not Found
+  
+  <span class="md-ellipsis">
+    Lecture Slides
+  </span>
+<span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_4">
+<span class="md-nav__icon md-icon"></span>
+            Lecture Slides
+          </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Lecture%20Slides/Cypress%20Testing%20Guide/">
+        
+  
+    
+    404: Not Found
+  
+  <span class="md-ellipsis">
+    Cypress Testing Guide
+  </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" id="__nav_5" type="checkbox"/>
 <div class="md-nav__link md-nav__container">
 <a class="md-nav__link" href="../../../blog/">
-<svg height="18" viewbox="0 0 1024 1024" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M843.5 737.4c-12.4-75.2-79.2-129.1-155.3-125.4S550.9 676 546 752c-153.5-4.8-208-40.7-199.1-113.7c3.3-27.3 19.8-41.9 50.1-49c18.4-4.3 38.8-4.9 57.3-3.2c1.7.2 3.5.3 5.2.5c11.3 2.7 22.8 5 34.3 6.8c34.1 5.6 68.8 8.4 101.8 6.6c92.8-5 156-45.9 159.2-132.7c3.1-84.1-54.7-143.7-147.9-183.6c-29.9-12.8-61.6-22.7-93.3-30.2c-14.3-3.4-26.3-5.7-35.2-7.2c-7.9-75.9-71.5-133.8-147.8-134.4S189.7 168 180.5 243.8s40 146.3 114.2 163.9s149.9-23.3 175.7-95.1c9.4 1.7 18.7 3.6 28 5.8c28.2 6.6 56.4 15.4 82.4 26.6c70.7 30.2 109.3 70.1 107.5 119.9c-1.6 44.6-33.6 65.2-96.2 68.6c-27.5 1.5-57.6-.9-87.3-5.8c-8.3-1.4-15.9-2.8-22.6-4.3c-3.9-.8-6.6-1.5-7.8-1.8l-3.1-.6c-2.2-.3-5.9-.8-10.7-1.3c-25-2.3-52.1-1.5-78.5 4.6c-55.2 12.9-93.9 47.2-101.1 105.8c-15.7 126.2 78.6 184.7 276 188.9c29.1 70.4 106.4 107.9 179.6 87c73.3-20.9 119.3-93.4 106.9-168.6M329.1 345.2c-46 0-83.3-37.3-83.3-83.3s37.3-83.3 83.3-83.3s83.3 37.3 83.3 83.3s-37.3 83.3-83.3 83.3M695.6 845c-46 0-83.3-37.3-83.3-83.3s37.3-83.3 83.3-83.3s83.3 37.3 83.3 83.3s-37.3 83.3-83.3 83.3" fill="currentColor"></path></svg>
-<span class="md-ellipsis">
+              
+  
+    
+    404: Not Found
+  
+  <span class="md-ellipsis">
     Blog
   </span>
 </a>
-<label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+<label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
 <span class="md-nav__icon md-icon"></span>
 </label>
 </div>
-<nav aria-expanded="false" aria-labelledby="__nav_4_label" class="md-nav" data-md-level="1">
-<label class="md-nav__title" for="__nav_4">
+<nav aria-expanded="false" aria-labelledby="__nav_5_label" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_5">
 <span class="md-nav__icon md-icon"></span>
             Blog
           </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../..">
-<svg height="18" viewbox="0 0 20 20" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5v6.604l1.5-2.6a3 3 0 0 1 2.599-1.5H15V7.5A1.5 1.5 0 0 0 13.5 6h-4a.5.5 0 0 1-.353-.146L7.44 4.146A.5.5 0 0 0 7.086 4H4.5A1.5 1.5 0 0 0 3 5.5m1.284 10.485q.106.015.22.015H13.9a2 2 0 0 0 1.732-1l2.163-3.745a1.5 1.5 0 0 0-1.3-2.25H7.1a2 2 0 0 0-1.732 1L3.205 13.75a1.5 1.5 0 0 0 1.079 2.235M2 14.46V5.5A2.5 2.5 0 0 1 4.5 3h2.586a1.5 1.5 0 0 1 1.06.44L9.708 5H13.5A2.5 2.5 0 0 1 16 7.5v.505h.496c1.925 0 3.128 2.083 2.166 3.75L16.499 15.5a3 3 0 0 1-2.598 1.5h-9.4q-.095 0-.186-.007a2.46 2.46 0 0 1-1.438-.592A2.5 2.5 0 0 1 2 14.461" fill="currentColor"></path></svg>
-<span class="md-ellipsis">
+        
+  
+    
+    404: Not Found
+  
+  <span class="md-ellipsis">
     Archive
   </span>
 </a>
@@ -1004,7 +1273,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#the-development-environment">
 <span class="md-ellipsis">
-      The Development Environment
+      
+        The Development Environment
+      
     </span>
 </a>
 <nav aria-label="The Development Environment" class="md-nav">
@@ -1012,21 +1283,27 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#client-software">
 <span class="md-ellipsis">
-      Client Software
+      
+        Client Software
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#development-tools">
 <span class="md-ellipsis">
-      Development Tools
+      
+        Development Tools
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#development-platform">
 <span class="md-ellipsis">
-      Development Platform
+      
+        Development Platform
+      
     </span>
 </a>
 </li>
@@ -1036,14 +1313,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#the-mern-architecture">
 <span class="md-ellipsis">
-      The MERN Architecture
+      
+        The MERN Architecture
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#install-node-version-manager">
 <span class="md-ellipsis">
-      Install Node Version Manager
+      
+        Install Node Version Manager
+      
     </span>
 </a>
 <nav aria-label="Install Node Version Manager" class="md-nav">
@@ -1051,7 +1332,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#run-the-nvm-install-script">
 <span class="md-ellipsis">
-      Run the NVM install script
+      
+        Run the NVM install script
+      
     </span>
 </a>
 </li>
@@ -1061,21 +1344,27 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#install-nodemon">
 <span class="md-ellipsis">
-      Install Nodemon
+      
+        Install Nodemon
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#the-cards-application">
 <span class="md-ellipsis">
-      The Cards Application
+      
+        The Cards Application
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#setting-up-the-front-end">
 <span class="md-ellipsis">
-      Setting up the Front End
+      
+        Setting up the Front End
+      
     </span>
 </a>
 <nav aria-label="Setting up the Front End" class="md-nav">
@@ -1083,14 +1372,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-the-app-directory">
 <span class="md-ellipsis">
-      Create the App Directory
+      
+        Create the App Directory
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#scaffold-the-front-end-for-the-cards-app">
 <span class="md-ellipsis">
-      Scaffold the Front End for the Cards App
+      
+        Scaffold the Front End for the Cards App
+      
     </span>
 </a>
 <nav aria-label="Scaffold the Front End for the Cards App" class="md-nav">
@@ -1098,7 +1391,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#the-vite-dev-server">
 <span class="md-ellipsis">
-      The Vite Dev Server
+      
+        The Vite Dev Server
+      
     </span>
 </a>
 </li>
@@ -1108,21 +1403,27 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-the-necessary-directories">
 <span class="md-ellipsis">
-      Create the necessary directories
+      
+        Create the necessary directories
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#run-visual-studio-code">
 <span class="md-ellipsis">
-      Run Visual Studio Code
+      
+        Run Visual Studio Code
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-react-components-and-pages">
 <span class="md-ellipsis">
-      Add React Components and Pages
+      
+        Add React Components and Pages
+      
     </span>
 </a>
 <nav aria-label="Add React Components and Pages" class="md-nav">
@@ -1130,7 +1431,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-the-pagetitle-and-login-react-components">
 <span class="md-ellipsis">
-      Create the PageTitle and Login React Components
+      
+        Create the PageTitle and Login React Components
+      
     </span>
 </a>
 <nav aria-label="Create the PageTitle and Login React Components" class="md-nav">
@@ -1138,14 +1441,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#pagetitletsx">
 <span class="md-ellipsis">
-      PageTitle.tsx
+      
+        PageTitle.tsx
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#logintsx">
 <span class="md-ellipsis">
-      Login.tsx
+      
+        Login.tsx
+      
     </span>
 </a>
 </li>
@@ -1155,7 +1462,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-the-login-page-itself">
 <span class="md-ellipsis">
-      Create the Login Page Itself
+      
+        Create the Login Page Itself
+      
     </span>
 </a>
 <nav aria-label="Create the Login Page Itself" class="md-nav">
@@ -1163,7 +1472,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#loginpagetsx">
 <span class="md-ellipsis">
-      LoginPage.tsx
+      
+        LoginPage.tsx
+      
     </span>
 </a>
 </li>
@@ -1173,7 +1484,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-apptsx-to-load-the-loginpage-component">
 <span class="md-ellipsis">
-      Update App.tsx to load the LoginPage Component
+      
+        Update App.tsx to load the LoginPage Component
+      
     </span>
 </a>
 <nav aria-label="Update App.tsx to load the LoginPage Component" class="md-nav">
@@ -1181,7 +1494,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#apptsx">
 <span class="md-ellipsis">
-      App.tsx
+      
+        App.tsx
+      
     </span>
 </a>
 </li>
@@ -1197,14 +1512,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test-the-front-end">
 <span class="md-ellipsis">
-      Test the Front End
+      
+        Test the Front End
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#setting-up-the-back-end">
 <span class="md-ellipsis">
-      Setting up the Back End
+      
+        Setting up the Back End
+      
     </span>
 </a>
 <nav aria-label="Setting up the Back End" class="md-nav">
@@ -1212,28 +1531,36 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-the-backend-folder-under-your-cards-project-folder-and-initialize-the-project">
 <span class="md-ellipsis">
-      Create the backend folder under your cards project folder and initialize the project
+      
+        Create the backend folder under your cards project folder and initialize the project
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#install-dependencies">
 <span class="md-ellipsis">
-      Install Dependencies
+      
+        Install Dependencies
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-a-nodemon-run-option">
 <span class="md-ellipsis">
-      Add a nodemon run option
+      
+        Add a nodemon run option
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-serverjs">
 <span class="md-ellipsis">
-      Create server.js
+      
+        Create server.js
+      
     </span>
 </a>
 </li>
@@ -1243,14 +1570,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test-your-server">
 <span class="md-ellipsis">
-      Test your server
+      
+        Test your server
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#initialize-your-git-repos">
 <span class="md-ellipsis">
-      Initialize your git repos
+      
+        Initialize your git repos
+      
     </span>
 </a>
 <nav aria-label="Initialize your git repos" class="md-nav">
@@ -1258,14 +1589,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#the-front-end">
 <span class="md-ellipsis">
-      The Front End
+      
+        The Front End
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#the-back-end">
 <span class="md-ellipsis">
-      The Back End
+      
+        The Back End
+      
     </span>
 </a>
 <nav aria-label="The Back End" class="md-nav">
@@ -1273,7 +1608,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#generate-gitignore-file">
 <span class="md-ellipsis">
-      Generate .gitignore File
+      
+        Generate .gitignore File
+      
     </span>
 </a>
 <nav aria-label="Generate .gitignore File" class="md-nav">
@@ -1281,14 +1618,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#frameworks-languages">
 <span class="md-ellipsis">
-      Frameworks &amp; Languages
+      
+        Frameworks &amp; Languages
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#file-types-and-categories">
 <span class="md-ellipsis">
-      File Types and Categories
+      
+        File Types and Categories
+      
     </span>
 </a>
 </li>
@@ -1298,7 +1639,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#initialize-the-repo">
 <span class="md-ellipsis">
-      Initialize the Repo
+      
+        Initialize the Repo
+      
     </span>
 </a>
 </li>
@@ -1311,7 +1654,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#finish-up-the-front-end">
 <span class="md-ellipsis">
-      Finish Up the Front End
+      
+        Finish Up the Front End
+      
     </span>
 </a>
 <nav aria-label="Finish Up the Front End" class="md-nav">
@@ -1319,14 +1664,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-loggedinname-component">
 <span class="md-ellipsis">
-      Add LoggedInName Component
+      
+        Add LoggedInName Component
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test">
 <span class="md-ellipsis">
-      Test
+      
+        Test
+      
     </span>
 </a>
 </li>
@@ -1336,7 +1685,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#routing-and-state">
 <span class="md-ellipsis">
-      Routing and State
+      
+        Routing and State
+      
     </span>
 </a>
 <nav aria-label="Routing and State" class="md-nav">
@@ -1344,28 +1695,36 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#install-react-router-dom">
 <span class="md-ellipsis">
-      Install react-router-dom
+      
+        Install react-router-dom
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#replace-apptsx-to-use-routing">
 <span class="md-ellipsis">
-      Replace App.tsx to use Routing
+      
+        Replace App.tsx to use Routing
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test_1">
 <span class="md-ellipsis">
-      Test
+      
+        Test
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-state-and-routing-to-logintsx">
 <span class="md-ellipsis">
-      Add state and routing to Login.tsx
+      
+        Add state and routing to Login.tsx
+      
     </span>
 </a>
 <nav aria-label="Add state and routing to Login.tsx" class="md-nav">
@@ -1373,49 +1732,63 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-state-to-logintsx">
 <span class="md-ellipsis">
-      Add state to Login.tsx
+      
+        Add state to Login.tsx
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-routing-to-logintsx">
 <span class="md-ellipsis">
-      Add routing to Login.tsx
+      
+        Add routing to Login.tsx
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#initialize-routing-and-state-handlers">
 <span class="md-ellipsis">
-      Initialize Routing and State Handlers
+      
+        Initialize Routing and State Handlers
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-calls-to-event-handlers-to-the-login-input-elements">
 <span class="md-ellipsis">
-      Add Calls to Event Handlers to the Login input elements
+      
+        Add Calls to Event Handlers to the Login input elements
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#edit-span-to-add-the-result-message">
 <span class="md-ellipsis">
-      Edit span to add the result message
+      
+        Edit span to add the result message
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-event-handler-functions-to-update-state">
 <span class="md-ellipsis">
-      Add Event Handler functions to update State
+      
+        Add Event Handler functions to update State
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-a-feedback-pop-up-to-the-dologin-function">
 <span class="md-ellipsis">
-      Add a feedback pop-up to the doLogin() function
+      
+        Add a feedback pop-up to the doLogin() function
+      
     </span>
 </a>
 </li>
@@ -1425,7 +1798,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-state-to-carduitsx">
 <span class="md-ellipsis">
-      Add state to CardUI.tsx
+      
+        Add state to CardUI.tsx
+      
     </span>
 </a>
 <nav aria-label="Add state to CardUI.tsx" class="md-nav">
@@ -1433,28 +1808,36 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#initialize-state-handlers">
 <span class="md-ellipsis">
-      Initialize State Handlers
+      
+        Initialize State Handlers
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-feedback-and-calls-to-event-handlers-to-the-form">
 <span class="md-ellipsis">
-      Add Feedback and Calls to Event Handlers to the Form
+      
+        Add Feedback and Calls to Event Handlers to the Form
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-the-event-handler-functions">
 <span class="md-ellipsis">
-      Add the Event Handler functions
+      
+        Add the Event Handler functions
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-addcard-and-searchcard-to-print-the-input-values">
 <span class="md-ellipsis">
-      Update addCard and searchCard to print the input values
+      
+        Update addCard and searchCard to print the input values
+      
     </span>
 </a>
 </li>
@@ -1464,7 +1847,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test_2">
 <span class="md-ellipsis">
-      Test
+      
+        Test
+      
     </span>
 </a>
 </li>
@@ -1474,14 +1859,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#dont-forget-to-commit">
 <span class="md-ellipsis">
-      Don’t forget to commit!
+      
+        Don’t forget to commit!
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#api-without-database-access">
 <span class="md-ellipsis">
-      API without Database Access
+      
+        API without Database Access
+      
     </span>
 </a>
 <nav aria-label="API without Database Access" class="md-nav">
@@ -1489,14 +1878,18 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-sample-data">
 <span class="md-ellipsis">
-      Add Sample Data
+      
+        Add Sample Data
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#add-api-endpoints">
 <span class="md-ellipsis">
-      Add API Endpoints
+      
+        Add API Endpoints
+      
     </span>
 </a>
 <nav aria-label="Add API Endpoints" class="md-nav">
@@ -1504,21 +1897,27 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#endpoint-for-adding-a-card">
 <span class="md-ellipsis">
-      Endpoint for Adding a Card
+      
+        Endpoint for Adding a Card
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#endpoint-for-login">
 <span class="md-ellipsis">
-      Endpoint for Login
+      
+        Endpoint for Login
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#endpoint-for-searching-cards">
 <span class="md-ellipsis">
-      Endpoint for Searching Cards
+      
+        Endpoint for Searching Cards
+      
     </span>
 </a>
 </li>
@@ -1528,7 +1927,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test-with-postman">
 <span class="md-ellipsis">
-      Test with Postman
+      
+        Test with Postman
+      
     </span>
 </a>
 <nav aria-label="Test with Postman" class="md-nav">
@@ -1536,21 +1937,27 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#for-apilogin">
 <span class="md-ellipsis">
-      for /api/login:
+      
+        for /api/login:
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#for-apiaddcard">
 <span class="md-ellipsis">
-      for /api/addcard:
+      
+        for /api/addcard:
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#for-apisearchcards">
 <span class="md-ellipsis">
-      for /api/searchcards:
+      
+        for /api/searchcards:
+      
     </span>
 </a>
 </li>
@@ -1563,7 +1970,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-login-to-use-the-api">
 <span class="md-ellipsis">
-      Update Login to use the API
+      
+        Update Login to use the API
+      
     </span>
 </a>
 <nav aria-label="Update Login to use the API" class="md-nav">
@@ -1571,28 +1980,36 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#replace-dologin-in-logintsx">
 <span class="md-ellipsis">
-      Replace doLogin() in Login.tsx
+      
+        Replace doLogin() in Login.tsx
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test-login-httplocalhost5173login">
 <span class="md-ellipsis">
-      Test login http://localhost:5173/login
+      
+        Test login http://localhost:5173/login
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-carduitsx-to-use-the-api">
 <span class="md-ellipsis">
-      Update CardUI.tsx to use the API
+      
+        Update CardUI.tsx to use the API
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test_3">
 <span class="md-ellipsis">
-      Test
+      
+        Test
+      
     </span>
 </a>
 </li>
@@ -1602,7 +2019,9 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-mongodb-cluster">
 <span class="md-ellipsis">
-      Create MongoDB Cluster
+      
+        Create MongoDB Cluster
+      
     </span>
 </a>
 <nav aria-label="Create MongoDB Cluster" class="md-nav">
@@ -1610,63 +2029,81 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#create-a-cluster">
 <span class="md-ellipsis">
-      Create a Cluster
+      
+        Create a Cluster
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#setup-your-user">
 <span class="md-ellipsis">
-      Setup your user
+      
+        Setup your user
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#choose-a-connection-method">
 <span class="md-ellipsis">
-      Choose a Connection Method
+      
+        Choose a Connection Method
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-network-access-settings">
 <span class="md-ellipsis">
-      Update Network Access settings
+      
+        Update Network Access settings
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-serverjs-with-the-database-connection-code">
 <span class="md-ellipsis">
-      Update server.js with the database connection code
+      
+        Update server.js with the database connection code
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#remove-the-cardlist-array">
 <span class="md-ellipsis">
-      Remove the cardList array
+      
+        Remove the cardList array
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-the-login-route-to-use-mongodb-for-the-user-store">
 <span class="md-ellipsis">
-      Update the login route to use MongoDB for the user store
+      
+        Update the login route to use MongoDB for the user store
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#update-loggedinname">
 <span class="md-ellipsis">
-      Update LoggedInName
+      
+        Update LoggedInName
+      
     </span>
 </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#test_4">
 <span class="md-ellipsis">
-      Test
+      
+        Test
+      
     </span>
 </a>
 </li>
@@ -1751,8 +2188,8 @@ Notice that both the front end and the API live locally on your computer.  We’
 </code></pre></div>
 <h2 id="install-nodemon">Install Nodemon<a class="headerlink" href="#install-nodemon" title="Permanent link">¶</a></h2>
 <p><code>Nodemon</code> is used in development environments to restart the back-end when changes are made to its source files.  This way you get real-time feedback as you update the code.<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>nodemon
-</code></pre></div></p>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>npm<span class="w"> </span>install<span class="w"> </span>-g<span class="w"> </span>nodemon
+</code></pre></div><p></p>
 <h1 id="the-cards-application">The <code>Cards</code> Application<a class="headerlink" href="#the-cards-application" title="Permanent link">¶</a></h1>
 <ul>
 <li>You will be building a simple baseball cards collection database.  </li>
@@ -1766,18 +2203,18 @@ Notice that both the front end and the API live locally on your computer.  We’
 <h1 id="setting-up-the-front-end">Setting up the Front End<a class="headerlink" href="#setting-up-the-front-end" title="Permanent link">¶</a></h1>
 <h2 id="create-the-app-directory">Create the App Directory<a class="headerlink" href="#create-the-app-directory" title="Permanent link">¶</a></h2>
 <p>We’ll use <code>cards</code> for the examples.  The front-end can live anywhere in your home directory.  These examples assume you’re starting in your home directory: /home/myuser on Linux and WSL, /Users/myuser on MacOS.  (Replace <code>myuser</code> with your actual username.  If you’re unsure of your username, type <code>echo $USERNAME</code> at the shell prompt)<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>mkdir<span class="w"> </span>cards
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-3-1" id="__codelineno-3-1" name="__codelineno-3-1"></a>mkdir<span class="w"> </span>cards
 <a href="#__codelineno-3-2" id="__codelineno-3-2" name="__codelineno-3-2"></a><span class="nb">cd</span><span class="w"> </span>cards
-</code></pre></div></p>
+</code></pre></div><p></p>
 <h2 id="scaffold-the-front-end-for-the-cards-app">Scaffold the Front End for the Cards App<a class="headerlink" href="#scaffold-the-front-end-for-the-cards-app" title="Permanent link">¶</a></h2>
 <p>While in the cards directory…<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>npm<span class="w"> </span>create<span class="w"> </span>vite@latest
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-4-1" id="__codelineno-4-1" name="__codelineno-4-1"></a>npm<span class="w"> </span>create<span class="w"> </span>vite@latest
 </code></pre></div><br/>
 Answer <code>frontend</code> for the project name.<br/>
 Answer <code>React</code> for framework.<br/>
 Answer <code>Typescript</code> for variant.<br/>
 Answer <code>No</code> to Use rolldown-vite (Experimental)<br/>
-Answer <code>Yes</code> to Install with npm and start now.</p>
+Answer <code>Yes</code> to Install with npm and start now.<p></p>
 <h3 id="the-vite-dev-server">The Vite Dev Server<a class="headerlink" href="#the-vite-dev-server" title="Permanent link">¶</a></h3>
 <p>You’ll notice that running the Create command also spun up the dev server in your terminal window:</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../../_assets/images/screenshot-vite-startup.png"><img alt="screenshot-vite-startup" src="../../../_assets/images/screenshot-vite-startup.png"/></a></p>
@@ -1789,11 +2226,11 @@ Answer <code>Yes</code> to Install with npm and start now.</p>
 <h2 id="create-the-necessary-directories">Create the necessary directories<a class="headerlink" href="#create-the-necessary-directories" title="Permanent link">¶</a></h2>
 <p>Since our previous command shell is now taken up by Vite’s dev server,<br/>
 open up a new shell/terminal and navigate back to your <code>frontend</code> directory and run these commands to build out the rest of the directories you’ll need:</p>
-<p><div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>src
+<p></p><div class="highlight"><pre><span></span><code><a href="#__codelineno-5-1" id="__codelineno-5-1" name="__codelineno-5-1"></a><span class="nb">cd</span><span class="w"> </span>src
 <a href="#__codelineno-5-2" id="__codelineno-5-2" name="__codelineno-5-2"></a>mkdir<span class="w"> </span>components
 <a href="#__codelineno-5-3" id="__codelineno-5-3" name="__codelineno-5-3"></a>mkdir<span class="w"> </span>pages
 </code></pre></div><br/>
-Now you’re ready to start <del>copying and pasting</del> <em>coding</em>!</p>
+Now you’re ready to start <del>copying and pasting</del> <em>coding</em>!<p></p>
 <h2 id="run-visual-studio-code">Run Visual Studio Code<a class="headerlink" href="#run-visual-studio-code" title="Permanent link">¶</a></h2>
 <p>Load your cards directory in VSCode</p>
 <div class="admonition tip">
@@ -1879,13 +2316,13 @@ Now you’re ready to start <del>copying and pasting</del> <em>coding</em>!</p>
 <h1 id="setting-up-the-back-end">Setting up the Back End<a class="headerlink" href="#setting-up-the-back-end" title="Permanent link">¶</a></h1>
 <p>Now we have a pretty web page that doesn’t do much (like a platypus).  Let’s hook this up to a simple API server</p>
 <h2 id="create-the-backend-folder-under-your-cards-project-folder-and-initialize-the-project">Create the <code>backend</code> folder under your <code>cards</code> project folder and initialize the project<a class="headerlink" href="#create-the-backend-folder-under-your-cards-project-folder-and-initialize-the-project" title="Permanent link">¶</a></h2>
-<p><div class="highlight"><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>mkdir<span class="w"> </span>backend
+<p></p><div class="highlight"><pre><span></span><code><a href="#__codelineno-10-1" id="__codelineno-10-1" name="__codelineno-10-1"></a>mkdir<span class="w"> </span>backend
 <a href="#__codelineno-10-2" id="__codelineno-10-2" name="__codelineno-10-2"></a><span class="nb">cd</span><span class="w"> </span>backend
 <a href="#__codelineno-10-3" id="__codelineno-10-3" name="__codelineno-10-3"></a>npm<span class="w"> </span>init
 </code></pre></div><br/>
 Take the default options (hit return)<br/>
 For the entry point, enter <code>server.js</code><br/>
-You can hit return through the remaining questions.</p>
+You can hit return through the remaining questions.<p></p>
 <h2 id="install-dependencies">Install Dependencies<a class="headerlink" href="#install-dependencies" title="Permanent link">¶</a></h2>
 <p>We’re going to need additional modules to support our API:</p>
 <ul>
@@ -1897,11 +2334,11 @@ You can hit return through the remaining questions.</p>
 </ul>
 <h2 id="add-a-nodemon-run-option">Add a nodemon run option<a class="headerlink" href="#add-a-nodemon-run-option" title="Permanent link">¶</a></h2>
 <p>Edit <code>package.json</code> to add a line to the scripts section that will allow your server to run with nodemon:<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="nt">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-12-1" id="__codelineno-12-1" name="__codelineno-12-1"></a><span class="nt">"scripts"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <a href="#__codelineno-12-2" id="__codelineno-12-2" name="__codelineno-12-2"></a><span class="w">    </span><span class="nt">"test"</span><span class="p">:</span><span class="w"> </span><span class="s2">"echo \"Error: no test specified\" &amp;&amp; exit 1"</span><span class="p">,</span>
 <a href="#__codelineno-12-3" id="__codelineno-12-3" name="__codelineno-12-3"></a><span class="w">    </span><span class="nt">"dev"</span><span class="p">:</span><span class="w"> </span><span class="s2">"nodemon ./server.js"</span>
 <a href="#__codelineno-12-4" id="__codelineno-12-4" name="__codelineno-12-4"></a><span class="w">  </span><span class="p">},</span>
-</code></pre></div></p>
+</code></pre></div><p></p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><em>Please note the comma at the end of the “test” line!</em></p>
@@ -2002,7 +2439,7 @@ You can hit return through the remaining questions.</p>
 <a href="#__codelineno-17-19" id="__codelineno-17-19" name="__codelineno-17-19"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">LoggedInName</span><span class="p">;</span>
 </code></pre></div>
 <p>Add CardUI.tsx:<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">CardUI</span><span class="p">()</span>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-18-1" id="__codelineno-18-1" name="__codelineno-18-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">CardUI</span><span class="p">()</span>
 <a href="#__codelineno-18-2" id="__codelineno-18-2" name="__codelineno-18-2"></a><span class="p">{</span>
 <a href="#__codelineno-18-3" id="__codelineno-18-3" name="__codelineno-18-3"></a><span class="w">    </span>
 <a href="#__codelineno-18-4" id="__codelineno-18-4" name="__codelineno-18-4"></a><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">addCard</span><span class="p">(</span><span class="nx">event</span><span class="o">:</span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="ow">void</span>
@@ -2035,9 +2472,9 @@ You can hit return through the remaining questions.</p>
 <a href="#__codelineno-18-31" id="__codelineno-18-31" name="__codelineno-18-31"></a><span class="p">}</span>
 <a href="#__codelineno-18-32" id="__codelineno-18-32" name="__codelineno-18-32"></a>
 <a href="#__codelineno-18-33" id="__codelineno-18-33" name="__codelineno-18-33"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">CardUI</span><span class="p">;</span>
-</code></pre></div></p>
+</code></pre></div><p></p>
 <p>Add CardPage.tsx to the <code>pages</code> folder:<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">PageTitle</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'../components/PageTitle'</span><span class="p">;</span>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-19-1" id="__codelineno-19-1" name="__codelineno-19-1"></a><span class="k">import</span><span class="w"> </span><span class="nx">PageTitle</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'../components/PageTitle'</span><span class="p">;</span>
 <a href="#__codelineno-19-2" id="__codelineno-19-2" name="__codelineno-19-2"></a><span class="k">import</span><span class="w"> </span><span class="nx">LoggedInName</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'../components/LoggedInName'</span><span class="p">;</span>
 <a href="#__codelineno-19-3" id="__codelineno-19-3" name="__codelineno-19-3"></a><span class="k">import</span><span class="w"> </span><span class="nx">CardUI</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'../components/CardUI'</span><span class="p">;</span>
 <a href="#__codelineno-19-4" id="__codelineno-19-4" name="__codelineno-19-4"></a>
@@ -2053,7 +2490,7 @@ You can hit return through the remaining questions.</p>
 <a href="#__codelineno-19-14" id="__codelineno-19-14" name="__codelineno-19-14"></a><span class="p">}</span>
 <a href="#__codelineno-19-15" id="__codelineno-19-15" name="__codelineno-19-15"></a>
 <a href="#__codelineno-19-16" id="__codelineno-19-16" name="__codelineno-19-16"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">CardPage</span><span class="p">;</span>
-</code></pre></div></p>
+</code></pre></div><p></p>
 <p>Finally, update App.tsx so it loads our updated UI:</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-20-1" id="__codelineno-20-1" name="__codelineno-20-1"></a><span class="k">import</span><span class="w"> </span><span class="s1">'./App.css'</span><span class="p">;</span>
 <a href="#__codelineno-20-2" id="__codelineno-20-2" name="__codelineno-20-2"></a>
@@ -2137,11 +2574,11 @@ You can hit return through the remaining questions.</p>
 </code></pre></div>
 <h3 id="edit-span-to-add-the-result-message">Edit span to add the result <code>message</code><a class="headerlink" href="#edit-span-to-add-the-result-message" title="Permanent link">¶</a></h3>
 <p>Add <code>{message}</code> in between the opening and closing <code>&lt;span&gt;</code> tags.<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-27-1" id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="o">&lt;</span><span class="nx">span</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">"loginResult"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">message</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/span&gt;</span>
-</code></pre></div></p>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-27-1" id="__codelineno-27-1" name="__codelineno-27-1"></a><span class="o">&lt;</span><span class="nx">span</span><span class="w"> </span><span class="nx">id</span><span class="o">=</span><span class="s2">"loginResult"</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">message</span><span class="p">}</span><span class="o">&lt;</span><span class="err">/span&gt;</span>
+</code></pre></div><p></p>
 <h3 id="add-event-handler-functions-to-update-state">Add Event Handler functions to update State<a class="headerlink" href="#add-event-handler-functions-to-update-state" title="Permanent link">¶</a></h3>
 <p>Add these to the top of the main function <code>Login()</code>.  These take the value of their respective input fields and, as the name implies, sets them in local state variables <code>loginName</code> and <code>loginPassword</code> defined earlier when we initialized state.<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-28-1" id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleSetLoginName</span><span class="p">(</span><span class="w"> </span><span class="nx">e</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="ow">void</span>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-28-1" id="__codelineno-28-1" name="__codelineno-28-1"></a><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleSetLoginName</span><span class="p">(</span><span class="w"> </span><span class="nx">e</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="ow">void</span>
 <a href="#__codelineno-28-2" id="__codelineno-28-2" name="__codelineno-28-2"></a><span class="w">    </span><span class="p">{</span>
 <a href="#__codelineno-28-3" id="__codelineno-28-3" name="__codelineno-28-3"></a><span class="w">      </span><span class="nx">setLoginName</span><span class="p">(</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="p">);</span>
 <a href="#__codelineno-28-4" id="__codelineno-28-4" name="__codelineno-28-4"></a><span class="w">    </span><span class="p">}</span>
@@ -2150,7 +2587,7 @@ You can hit return through the remaining questions.</p>
 <a href="#__codelineno-28-7" id="__codelineno-28-7" name="__codelineno-28-7"></a><span class="w">    </span><span class="p">{</span>
 <a href="#__codelineno-28-8" id="__codelineno-28-8" name="__codelineno-28-8"></a><span class="w">      </span><span class="nx">setPassword</span><span class="p">(</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="p">);</span>
 <a href="#__codelineno-28-9" id="__codelineno-28-9" name="__codelineno-28-9"></a><span class="w">    </span><span class="p">}</span>
-</code></pre></div></p>
+</code></pre></div><p></p>
 <h3 id="add-a-feedback-pop-up-to-the-dologin-function">Add a feedback pop-up to the <code>doLogin()</code> function<a class="headerlink" href="#add-a-feedback-pop-up-to-the-dologin-function" title="Permanent link">¶</a></h3>
 <p>This is temporary, just so we know we’re properly updating and passing data.</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-29-1" id="__codelineno-29-1" name="__codelineno-29-1"></a><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">doLogin</span><span class="p">(</span><span class="nx">event</span><span class="o">:</span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="ow">void</span>
@@ -2166,12 +2603,12 @@ You can hit return through the remaining questions.</p>
 </code></pre></div>
 <h3 id="initialize-state-handlers">Initialize State Handlers<a class="headerlink" href="#initialize-state-handlers" title="Permanent link">¶</a></h3>
 <p>At the top of the <code>CardUI()</code> function, add:<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-31-1" id="__codelineno-31-1" name="__codelineno-31-1"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">message</span><span class="p">,</span><span class="nx">setMessage</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-31-1" id="__codelineno-31-1" name="__codelineno-31-1"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">message</span><span class="p">,</span><span class="nx">setMessage</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
 <a href="#__codelineno-31-2" id="__codelineno-31-2" name="__codelineno-31-2"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">searchResults</span><span class="p">,</span><span class="nx">setResults</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
 <a href="#__codelineno-31-3" id="__codelineno-31-3" name="__codelineno-31-3"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">cardList</span><span class="p">,</span><span class="nx">setCardList</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
 <a href="#__codelineno-31-4" id="__codelineno-31-4" name="__codelineno-31-4"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">search</span><span class="p">,</span><span class="nx">setSearchValue</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
 <a href="#__codelineno-31-5" id="__codelineno-31-5" name="__codelineno-31-5"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">card</span><span class="p">,</span><span class="nx">setCardNameValue</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s1">''</span><span class="p">);</span>
-</code></pre></div></p>
+</code></pre></div><p></p>
 <h3 id="add-feedback-and-calls-to-event-handlers-to-the-form">Add Feedback and Calls to Event Handlers to the Form<a class="headerlink" href="#add-feedback-and-calls-to-event-handlers-to-the-form" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-32-1" id="__codelineno-32-1" name="__codelineno-32-1"></a><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s">"cardUIDiv"</span><span class="p">&gt;</span>
 <a href="#__codelineno-32-2" id="__codelineno-32-2" name="__codelineno-32-2"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">br</span><span class="w"> </span><span class="p">/&gt;</span>
@@ -2189,7 +2626,7 @@ You can hit return through the remaining questions.</p>
 </code></pre></div>
 <h3 id="add-the-event-handler-functions">Add the Event Handler functions<a class="headerlink" href="#add-the-event-handler-functions" title="Permanent link">¶</a></h3>
 <p>After the <code>addCard</code> and <code>searchCard</code> functions, add these two:<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-33-1" id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleSearchTextChange</span><span class="p">(</span><span class="w"> </span><span class="nx">e</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="ow">void</span>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-33-1" id="__codelineno-33-1" name="__codelineno-33-1"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleSearchTextChange</span><span class="p">(</span><span class="w"> </span><span class="nx">e</span><span class="o">:</span><span class="w"> </span><span class="kt">any</span><span class="w"> </span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="ow">void</span>
 <a href="#__codelineno-33-2" id="__codelineno-33-2" name="__codelineno-33-2"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="p">{</span>
 <a href="#__codelineno-33-3" id="__codelineno-33-3" name="__codelineno-33-3"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="nx">setSearchValue</span><span class="p">(</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="p">);</span>
 <a href="#__codelineno-33-4" id="__codelineno-33-4" name="__codelineno-33-4"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
@@ -2198,10 +2635,10 @@ You can hit return through the remaining questions.</p>
 <a href="#__codelineno-33-7" id="__codelineno-33-7" name="__codelineno-33-7"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="p">{</span>
 <a href="#__codelineno-33-8" id="__codelineno-33-8" name="__codelineno-33-8"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="nx">setCardNameValue</span><span class="p">(</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="w"> </span><span class="p">);</span>
 <a href="#__codelineno-33-9" id="__codelineno-33-9" name="__codelineno-33-9"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
-</code></pre></div></p>
+</code></pre></div><p></p>
 <h3 id="update-addcard-and-searchcard-to-print-the-input-values">Update <code>addCard</code> and <code>searchCard</code> to print the input values<a class="headerlink" href="#update-addcard-and-searchcard-to-print-the-input-values" title="Permanent link">¶</a></h3>
 <p>Again, this is placeholder code until we wire it up to the API.<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-34-1" id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">addCard</span><span class="p">(</span><span class="nx">e</span><span class="o">:</span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="ow">void</span>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-34-1" id="__codelineno-34-1" name="__codelineno-34-1"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">addCard</span><span class="p">(</span><span class="nx">e</span><span class="o">:</span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="ow">void</span>
 <a href="#__codelineno-34-2" id="__codelineno-34-2" name="__codelineno-34-2"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="p">{</span>
 <a href="#__codelineno-34-3" id="__codelineno-34-3" name="__codelineno-34-3"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
 <a href="#__codelineno-34-4" id="__codelineno-34-4" name="__codelineno-34-4"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s1">'addCard() '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">card</span><span class="p">);</span>
@@ -2212,7 +2649,7 @@ You can hit return through the remaining questions.</p>
 <a href="#__codelineno-34-9" id="__codelineno-34-9" name="__codelineno-34-9"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">preventDefault</span><span class="p">();</span>
 <a href="#__codelineno-34-10" id="__codelineno-34-10" name="__codelineno-34-10"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="nx">alert</span><span class="p">(</span><span class="s1">'searchCard() '</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">search</span><span class="p">);</span>
 <a href="#__codelineno-34-11" id="__codelineno-34-11" name="__codelineno-34-11"></a><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="o">&amp;</span><span class="nx">emsp</span><span class="p">;</span><span class="w"> </span><span class="p">};</span>
-</code></pre></div></p>
+</code></pre></div><p></p>
 <h2 id="test_2">Test<a class="headerlink" href="#test_2" title="Permanent link">¶</a></h2>
 <p>You should now get a login page when you access the app:</p>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-type="image" data-width="auto" href="../../../_assets/images/screenshot-login-page-unstyled.png"><img alt="screenshot-login-page-unstyled" src="../../../_assets/images/screenshot-login-page-unstyled.png"/></a></p>
@@ -2421,13 +2858,13 @@ Edit <code>server.js</code> to add the following after the two <code>require</co
 <a href="#__codelineno-40-4" id="__codelineno-40-4" name="__codelineno-40-4"></a><span class="p">}</span>
 </code></pre></div>
 <p><strong>Result:</strong><br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-41-1" id="__codelineno-41-1" name="__codelineno-41-1"></a><span class="p">{</span>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-41-1" id="__codelineno-41-1" name="__codelineno-41-1"></a><span class="p">{</span>
 <a href="#__codelineno-41-2" id="__codelineno-41-2" name="__codelineno-41-2"></a><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
 <a href="#__codelineno-41-3" id="__codelineno-41-3" name="__codelineno-41-3"></a><span class="nt">"firstName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Rick"</span><span class="p">,</span>
 <a href="#__codelineno-41-4" id="__codelineno-41-4" name="__codelineno-41-4"></a><span class="nt">"lastName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Leinecker"</span><span class="p">,</span>
 <a href="#__codelineno-41-5" id="__codelineno-41-5" name="__codelineno-41-5"></a><span class="nt">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span>
 <a href="#__codelineno-41-6" id="__codelineno-41-6" name="__codelineno-41-6"></a><span class="p">}</span>
-</code></pre></div></p>
+</code></pre></div><p></p>
 <h3 id="for-apiaddcard">for /api/addcard:<a class="headerlink" href="#for-apiaddcard" title="Permanent link">¶</a></h3>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-42-1" id="__codelineno-42-1" name="__codelineno-42-1"></a><span class="p">{</span>
 <a href="#__codelineno-42-2" id="__codelineno-42-2" name="__codelineno-42-2"></a><span class="w">  </span><span class="nt">"userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"RickL"</span><span class="p">,</span>
@@ -2435,10 +2872,10 @@ Edit <code>server.js</code> to add the following after the two <code>require</co
 <a href="#__codelineno-42-4" id="__codelineno-42-4" name="__codelineno-42-4"></a><span class="p">}</span>
 </code></pre></div>
 <p><strong>Result:</strong><br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-43-1" id="__codelineno-43-1" name="__codelineno-43-1"></a><span class="p">{</span>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-43-1" id="__codelineno-43-1" name="__codelineno-43-1"></a><span class="p">{</span>
 <a href="#__codelineno-43-2" id="__codelineno-43-2" name="__codelineno-43-2"></a><span class="w">	</span><span class="nt">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span>
 <a href="#__codelineno-43-3" id="__codelineno-43-3" name="__codelineno-43-3"></a><span class="p">}</span>
-</code></pre></div></p>
+</code></pre></div><p></p>
 <div class="admonition tip">
 <p class="admonition-title">Important</p>
 <p>In this example app, endpoints will always return a JSON object.  The status of the request is  indicated by the “error” property.<br/>
@@ -2451,13 +2888,13 @@ If the request succeeded, the error will be empty, otherwise its value will be a
 <a href="#__codelineno-44-4" id="__codelineno-44-4" name="__codelineno-44-4"></a><span class="p">}</span>
 </code></pre></div>
 <p><strong>Result:</strong><br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-45-1" id="__codelineno-45-1" name="__codelineno-45-1"></a><span class="p">{</span>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-45-1" id="__codelineno-45-1" name="__codelineno-45-1"></a><span class="p">{</span>
 <a href="#__codelineno-45-2" id="__codelineno-45-2" name="__codelineno-45-2"></a><span class="w">	</span><span class="nt">"results"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
 <a href="#__codelineno-45-3" id="__codelineno-45-3" name="__codelineno-45-3"></a><span class="w">		</span><span class="s2">"Hatsune Miku"</span>
 <a href="#__codelineno-45-4" id="__codelineno-45-4" name="__codelineno-45-4"></a><span class="w">	</span><span class="p">],</span>
 <a href="#__codelineno-45-5" id="__codelineno-45-5" name="__codelineno-45-5"></a><span class="w">	</span><span class="nt">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span>
 <a href="#__codelineno-45-6" id="__codelineno-45-6" name="__codelineno-45-6"></a><span class="p">}</span>
-</code></pre></div></p>
+</code></pre></div><p></p>
 <h1 id="update-login-to-use-the-api">Update Login to use the API<a class="headerlink" href="#update-login-to-use-the-api" title="Permanent link">¶</a></h1>
 <h2 id="replace-dologin-in-logintsx">Replace <code>doLogin()</code> in Login.tsx<a class="headerlink" href="#replace-dologin-in-logintsx" title="Permanent link">¶</a></h2>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-46-1" id="__codelineno-46-1" name="__codelineno-46-1"></a><span class="w">    </span><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">doLogin</span><span class="p">(</span><span class="nx">event</span><span class="o">:</span><span class="kt">any</span><span class="p">)</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="nb">Promise</span><span class="o">&lt;</span><span class="ow">void</span><span class="o">&gt;</span>
@@ -2666,7 +3103,7 @@ If the request succeeded, the error will be empty, otherwise its value will be a
 <h2 id="update-loggedinname">Update LoggedInName<a class="headerlink" href="#update-loggedinname" title="Permanent link">¶</a></h2>
 <p>Let’s use the browser’s localStorage feature to keep track of our user and display their info in the LoggedInName component.</p>
 <p>Replace LoggedInName:<br/>
-<div class="highlight"><pre><span></span><code><a href="#__codelineno-50-1" id="__codelineno-50-1" name="__codelineno-50-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">LoggedInName</span><span class="p">()</span>
+</p><div class="highlight"><pre><span></span><code><a href="#__codelineno-50-1" id="__codelineno-50-1" name="__codelineno-50-1"></a><span class="kd">function</span><span class="w"> </span><span class="nx">LoggedInName</span><span class="p">()</span>
 <a href="#__codelineno-50-2" id="__codelineno-50-2" name="__codelineno-50-2"></a><span class="p">{</span>
 <a href="#__codelineno-50-3" id="__codelineno-50-3" name="__codelineno-50-3"></a><span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">getCurrentUserName</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
 <a href="#__codelineno-50-4" id="__codelineno-50-4" name="__codelineno-50-4"></a><span class="w">        </span><span class="kd">var</span><span class="w"> </span><span class="nx">data</span><span class="p">;</span>
@@ -2690,7 +3127,7 @@ If the request succeeded, the error will be empty, otherwise its value will be a
 <a href="#__codelineno-50-22" id="__codelineno-50-22" name="__codelineno-50-22"></a><span class="p">};</span>
 <a href="#__codelineno-50-23" id="__codelineno-50-23" name="__codelineno-50-23"></a>
 <a href="#__codelineno-50-24" id="__codelineno-50-24" name="__codelineno-50-24"></a><span class="k">export</span><span class="w"> </span><span class="k">default</span><span class="w"> </span><span class="nx">LoggedInName</span><span class="p">;</span>
-</code></pre></div></p>
+</code></pre></div><p></p>
 <p>Edit api/addcard</p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-51-1" id="__codelineno-51-1" name="__codelineno-51-1"></a><span class="nx">app</span><span class="p">.</span><span class="nx">post</span><span class="p">(</span><span class="s1">'/api/addcard'</span><span class="p">,</span><span class="w"> </span><span class="k">async</span><span class="w"> </span><span class="p">(</span><span class="nx">req</span><span class="p">,</span><span class="w"> </span><span class="nx">res</span><span class="p">,</span><span class="w"> </span><span class="nx">next</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span>
 <a href="#__codelineno-51-2" id="__codelineno-51-2" name="__codelineno-51-2"></a><span class="p">{</span>
@@ -2742,9 +3179,6 @@ If the request succeeded, the error will be empty, otherwise its value will be a
 <a href="#__codelineno-52-23" id="__codelineno-52-23" name="__codelineno-52-23"></a><span class="p">});</span>
 </code></pre></div>
 <h2 id="test_4">Test<a class="headerlink" href="#test_4" title="Permanent link">¶</a></h2>
-<!-- Source file information -->
-<!-- taken from 
-https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
 <hr/>
 <div class="md-source-file">
 <small>
@@ -2791,7 +3225,7 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
 </div>
 <div class="md-social">
 <a class="md-social__link" href="https://github.com/Enveloppe/" rel="noopener" target="_blank" title="github.com">
-<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2" fill="currentColor"></path></svg>
+<svg viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"></path></svg>
 </a>
 </div>
 </div>
@@ -2801,13 +3235,13 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.indexes", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
-<script src="../../../assets/javascripts/bundle.50899def.min.js"></script>
+<script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["navigation.indexes", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "search.suggest", "search.highlight", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
 <script src="../../../_static/js/mathjax.js"></script>
 <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script src="../../../_static/js/snippets.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/Enveloppe/_static@refs/heads/master/dist/index.js"></script>
 <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
-document$.subscribe(() => { lightbox.reload() });
-</script></body>
-</html>
+document$.subscribe(()=>{ lightbox.reload(); });
+</script></body></html><!-- Source file information --><!-- taken from 
+https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
