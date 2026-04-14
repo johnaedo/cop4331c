@@ -554,15 +554,6 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#cypresse2emynewfeaturecyjs-describemy-feature-beforeeach-log-in-so-the-app-thinks-we-are-authenticated-cyfixtureauththenauth-cyloginbylocalstorageauthuser-authtoken-stub-any-api-calls-the-page-will-make-cyinterceptget-apisomething-body-asgetdata-navigate-to-the-page-cyvisitmy-page-cywaitgetdata-itshows-some-text-on-the-page-cycontainshello-worldshouldbevisible-itclicks-a-button-and-checks-the-result-cycontainsbutton-click-meclick-cycontainsyou-clicked-itshouldbevisible">
-<span class="md-ellipsis">
-      
-        // cypress/e2e/myNewFeature.cy.js describe('My Feature', () =&gt; { beforeEach(() =&gt; { // Log in so the app thinks we are authenticated cy.fixture('auth').then((auth) =&gt; { cy.loginByLocalStorage(auth.user, auth.token); }); // Stub any API calls the page will make cy.intercept('GET', '/api/something*', { body: [] }).as('getData'); // Navigate to the page cy.visit('/my-page'); cy.wait('@getData'); }); it('shows some text on the page', () =&gt; { cy.contains('Hello World').should('be.visible'); }); it('clicks a button and checks the result', () =&gt; { cy.contains('button', 'Click Me').click(); cy.contains('You clicked it!').should('be.visible'); }); });
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#10-common-commands-cheat-sheet">
 <span class="md-ellipsis">
       
@@ -934,15 +925,6 @@
 <span class="md-ellipsis">
       
         9. Writing Your Own Tests
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#cypresse2emynewfeaturecyjs-describemy-feature-beforeeach-log-in-so-the-app-thinks-we-are-authenticated-cyfixtureauththenauth-cyloginbylocalstorageauthuser-authtoken-stub-any-api-calls-the-page-will-make-cyinterceptget-apisomething-body-asgetdata-navigate-to-the-page-cyvisitmy-page-cywaitgetdata-itshows-some-text-on-the-page-cycontainshello-worldshouldbevisible-itclicks-a-button-and-checks-the-result-cycontainsbutton-click-meclick-cycontainsyou-clicked-itshouldbevisible">
-<span class="md-ellipsis">
-      
-        // cypress/e2e/myNewFeature.cy.js describe('My Feature', () =&gt; { beforeEach(() =&gt; { // Log in so the app thinks we are authenticated cy.fixture('auth').then((auth) =&gt; { cy.loginByLocalStorage(auth.user, auth.token); }); // Stub any API calls the page will make cy.intercept('GET', '/api/something*', { body: [] }).as('getData'); // Navigate to the page cy.visit('/my-page'); cy.wait('@getData'); }); it('shows some text on the page', () =&gt; { cy.contains('Hello World').should('be.visible'); }); it('clicks a button and checks the result', () =&gt; { cy.contains('button', 'Click Me').click(); cy.contains('You clicked it!').should('be.visible'); }); });
       
     </span>
 </a>
@@ -1322,7 +1304,7 @@ Use this only in <code>auth.cy.js</code> where you are explicitly testing the lo
 <hr/>
 <h2 id="9-writing-your-own-tests">9. Writing Your Own Tests<a class="headerlink" href="#9-writing-your-own-tests" title="Permanent link">¶</a></h2>
 <p>Here is a minimal template to add a new test:</p>
-<h2 id="cypresse2emynewfeaturecyjs-describemy-feature-beforeeach-log-in-so-the-app-thinks-we-are-authenticated-cyfixtureauththenauth-cyloginbylocalstorageauthuser-authtoken-stub-any-api-calls-the-page-will-make-cyinterceptget-apisomething-body-asgetdata-navigate-to-the-page-cyvisitmy-page-cywaitgetdata-itshows-some-text-on-the-page-cycontainshello-worldshouldbevisible-itclicks-a-button-and-checks-the-result-cycontainsbutton-click-meclick-cycontainsyou-clicked-itshouldbevisible"><div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1">// cypress/e2e/myNewFeature.cy.js</span>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-7-1" id="__codelineno-7-1" name="__codelineno-7-1"></a><span class="c1">// cypress/e2e/myNewFeature.cy.js</span>
 <a href="#__codelineno-7-2" id="__codelineno-7-2" name="__codelineno-7-2"></a>
 <a href="#__codelineno-7-3" id="__codelineno-7-3" name="__codelineno-7-3"></a><span class="nx">describe</span><span class="p">(</span><span class="s1">'My Feature'</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
 <a href="#__codelineno-7-4" id="__codelineno-7-4" name="__codelineno-7-4"></a><span class="w">  </span><span class="nx">beforeEach</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
@@ -1348,7 +1330,8 @@ Use this only in <code>auth.cy.js</code> where you are explicitly testing the lo
 <a href="#__codelineno-7-24" id="__codelineno-7-24" name="__codelineno-7-24"></a><span class="w">    </span><span class="nx">cy</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="s1">'You clicked it!'</span><span class="p">).</span><span class="nx">should</span><span class="p">(</span><span class="s1">'be.visible'</span><span class="p">);</span>
 <a href="#__codelineno-7-25" id="__codelineno-7-25" name="__codelineno-7-25"></a><span class="w">  </span><span class="p">});</span>
 <a href="#__codelineno-7-26" id="__codelineno-7-26" name="__codelineno-7-26"></a><span class="p">});</span>
-</code></pre></div><a class="headerlink" href="#cypresse2emynewfeaturecyjs-describemy-feature-beforeeach-log-in-so-the-app-thinks-we-are-authenticated-cyfixtureauththenauth-cyloginbylocalstorageauthuser-authtoken-stub-any-api-calls-the-page-will-make-cyinterceptget-apisomething-body-asgetdata-navigate-to-the-page-cyvisitmy-page-cywaitgetdata-itshows-some-text-on-the-page-cycontainshello-worldshouldbevisible-itclicks-a-button-and-checks-the-result-cycontainsbutton-click-meclick-cycontainsyou-clicked-itshouldbevisible" title="Permanent link">¶</a></h2>
+</code></pre></div>
+<hr/>
 <p><strong>Selectors — how to target elements:</strong></p>
 <div class="highlight"><pre><span></span><code><a href="#__codelineno-8-1" id="__codelineno-8-1" name="__codelineno-8-1"></a><span class="c1">// By text content (most readable)</span>
 <a href="#__codelineno-8-2" id="__codelineno-8-2" name="__codelineno-8-2"></a><span class="nx">cy</span><span class="p">.</span><span class="nx">contains</span><span class="p">(</span><span class="s1">'Submit'</span><span class="p">)</span>
@@ -1485,7 +1468,7 @@ for the network call before proceeding, rather than assuming the data is already
 <small>
 <!-- mkdocs-git-revision-date-localized-plugin -->
 <u>Last update</u> :
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 14, 2026 15:24:31 UTC">April 14, 2026</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="April 14, 2026 20:54:12 UTC">April 14, 2026</span>
 <!-- mkdocs-git-revision-date-plugin -->
 <br/>
 <u>Created</u> :
