@@ -48,7 +48,7 @@ Where a unit test checks a single function in isolation, an E2E test controls a 
 ## 2. Prerequisites
 
 You need **Node.js** installed on your computer.  
-Cypress requires **Node.js 18 or newer**.
+Cypress requires **Node.js 18 or newer** but we'll use a newer version.
 
 To check your version, open a terminal and run:
 
