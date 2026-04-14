@@ -17,6 +17,7 @@ dependencies = [
     "mkdocs-custom-tags-attributes",
     "mkdocs-meta-descriptions-plugin",
     "mkdocs-glightbox",
+    "mkdocs-revealjs",
     "mkdocs-obsidian-links",
     "beautifulsoup4",
     "babel"
