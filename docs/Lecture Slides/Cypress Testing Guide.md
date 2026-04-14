@@ -80,6 +80,7 @@ That's it. Cypress is now installed into `client/node_modules/`.
 > `npm install` picks it up automatically along with all the other packages.
 
 ---
+
 ## 4. Project Structure
 
 After installation, the `client/` folder looks like this (new files highlighted with \*):
@@ -127,7 +128,9 @@ Leave this terminal open. You should see output like:
   VITE v5.x.x  ready in 300ms
   ➜  Local:   http://localhost:8080/
 ```
+
 ---
+
 ### Terminal 2 – Run Cypress
 
 Open a **second** terminal tab/window:
@@ -174,6 +177,7 @@ This runs all tests in the terminal with no visible browser window. Useful for c
 ## 6. Understanding the Test Files
 
 ---
+
 ### `auth.cy.js` – Authentication
 
 Covers:
@@ -186,13 +190,16 @@ Covers:
 - Logout clears localStorage and redirects
 
 ---
+
 ### `navigation.cy.js` – Nav bar
 
 Covers:
 - Brand/logo is visible
 - Each nav link takes you to the right page
 - User menu opens and shows Edit Profile / Logout
+
 ---
+
 ### `dashboard.cy.js` – Home page
 
 Covers:
@@ -201,7 +208,9 @@ Covers:
 - Recent transactions appear
 - Budget overview appears
 - Empty state (no data) doesn't crash the page
+
 ---
+
 ### `transactions.cy.js` – Transaction Manager
 
 Covers:
@@ -215,17 +224,21 @@ Covers:
 - Updating a transaction
 - Deleting a transaction
 - Empty state (no transactions)
+
 ---
+
 ### `categories.cy.js` – Category Manager
 
 Covers full CRUD for categories (same pattern as transactions).
 
 ---
+
 ### `budgets.cy.js` – Budget Manager
 
 Covers full CRUD for budgets, including the amount display.
 
 ---
+
 ### `taxEstimator.cy.js` – Tax Estimator
 
 Covers:
@@ -275,6 +288,7 @@ every single test would be slow and fragile. Instead, two custom helpers are
 available (defined in `cypress/support/commands.js`)
 
 ---
+
 ##### `cy.loginByLocalStorage(user, token)`
 
 Directly writes auth data into `localStorage` — no browser interaction needed.
@@ -290,9 +304,8 @@ beforeEach(() => {
 });
 ```
 
-
-
 ---
+
 ##### `cy.loginByUI(identifier, password)`
 
 Actually visits `/login`, types credentials, and clicks Login.
@@ -332,6 +345,7 @@ describe('My Feature', () => {
   });
 });
 ```
+
 ---
 
 **Selectors — how to target elements:**
@@ -353,25 +367,25 @@ cy.get('.modal-title')
 
 ## 10. Common Commands Cheat Sheet
 
-| Command | What it does |
-|---|---|
-| `cy.visit('/path')` | Navigate to a URL (baseUrl is prepended) |
-| `cy.contains('text')` | Find an element that contains this text |
-| `cy.contains('button', 'Save')` | Find a `<button>` with text "Save" |
-| `cy.get('selector')` | Find element(s) by CSS selector |
-| `.click()` | Click the element |
-| `.type('hello')` | Type into an input field |
-| `.clear()` | Clear an input field |
-| `.select('option')` | Choose an option in a `<select>` dropdown |
-| `.should('be.visible')` | Assert the element is visible |
-| `.should('not.exist')` | Assert the element is gone from the DOM |
-| `.should('have.value', 'x')` | Assert an input's value |
-| `.should('have.class', 'foo')` | Assert a CSS class is present |
-| `cy.url().should('include', '/path')` | Assert the current URL |
-| `cy.intercept('GET', '/api/x', {...})` | Stub an API call |
-| `cy.wait('@alias')` | Wait for a stubbed/spied request to complete |
-| `cy.fixture('file')` | Load data from `cypress/fixtures/file.json` |
-| `cy.window()` | Access the browser's `window` object |
+| Command                                | What it does                                 |
+| -------------------------------------- | -------------------------------------------- |
+| `cy.visit('/path')`                    | Navigate to a URL (baseUrl is prepended)     |
+| `cy.contains('text')`                  | Find an element that contains this text      |
+| `cy.contains('button', 'Save')`        | Find a `<button>` with text "Save"           |
+| `cy.get('selector')`                   | Find element(s) by CSS selector              |
+| `.click()`                             | Click the element                            |
+| `.type('hello')`                       | Type into an input field                     |
+| `.clear()`                             | Clear an input field                         |
+| `.select('option')`                    | Choose an option in a `<select>` dropdown    |
+| `.should('be.visible')`                | Assert the element is visible                |
+| `.should('not.exist')`                 | Assert the element is gone from the DOM      |
+| `.should('have.value', 'x')`           | Assert an input's value                      |
+| `.should('have.class', 'foo')`         | Assert a CSS class is present                |
+| `cy.url().should('include', '/path')`  | Assert the current URL                       |
+| `cy.intercept('GET', '/api/x', {...})` | Stub an API call                             |
+| `cy.wait('@alias')`                    | Wait for a stubbed/spied request to complete |
+| `cy.fixture('file')`                   | Load data from `cypress/fixtures/file.json`  |
+| `cy.window()`                          | Access the browser's `window` object         |
 
 ---
 
@@ -383,26 +397,31 @@ cy.get('.modal-title')
 You have not installed dependencies yet. Run `npm install` inside `client/`.
 
 ---
+
 ### Tests fail with "cy.visit() failed because the server responded with 502"
 The Vite dev server is not running. Start it with `npm run dev` in a separate terminal.
 
 ---
+
 ### "baseUrl is not set" warning
 Make sure `cypress.config.js` exists in the `client/` folder (it was created as part of this setup).
 
 ---
+
 ### "Cannot read properties of undefined" in a test
 The API stub may not be returning the shape the component expects. Check your
 fixture data in `cypress/fixtures/auth.json` and the inline stub objects in the
 test file.
 
 ---
+
 ### Tests pass in `cy:open` but fail in `cy:run`
 Headless Electron (the default runner for `cy:run`) renders slightly differently.
 Add `.should('be.visible')` checks before interacting with elements, and use
 `cy.wait('@alias')` after intercepts instead of relying on timing.
 
 ---
+
 ### A test randomly passes/fails (flaky tests)
 Add an explicit `cy.wait('@alias')` after `cy.intercept()` stubs so Cypress waits
 for the network call before proceeding, rather than assuming the data is already there.
