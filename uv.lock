@@ -163,6 +163,7 @@ dependencies = [
     { name = "mkdocs-material" },
     { name = "mkdocs-meta-descriptions-plugin" },
     { name = "mkdocs-obsidian-links" },
+    { name = "mkdocs-revealjs" },
 ]
 
 [package.dev-dependencies]
@@ -190,6 +191,7 @@ requires-dist = [
     { name = "mkdocs-material" },
     { name = "mkdocs-meta-descriptions-plugin" },
     { name = "mkdocs-obsidian-links" },
+    { name = "mkdocs-revealjs" },
 ]
 
 [package.metadata.requires-dev]
@@ -583,6 +585,18 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/bc/95/052abdd07053f79b3656966eb711c8a8b49f5eada81369668ee201f07841/mkdocs_obsidian_links-1.0.4.tar.gz", hash = "sha256:83c7c8ad97d7f54ab047c6a57d90acff32de2f861fb84fae0206559362c337c8", size = 1086009, upload-time = "2024-12-23T20:50:56.683Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/3c/79/affa68dda57eb1e75b3ab3bc703b4757a410e58cb5271f95223ce7ae2807/mkdocs_obsidian_links-1.0.4-py2.py3-none-any.whl", hash = "sha256:a9ccf3f454b77d1a8a7482581c6f12f0d223fca320785895af7540b22b041a2f", size = 12552, upload-time = "2024-12-23T20:50:53.853Z" },
+]
+
+[[package]]
+name = "mkdocs-revealjs"
+version = "0.8.5"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "mkdocs" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/6f/c2/cf53718df383c42d4a7f8c71840fcd42b2a9790d8a43e278d3819267ad38/mkdocs_revealjs-0.8.5.tar.gz", hash = "sha256:2bcdd5aa86bebc7f2c46148cd13f7ad5eb4fdb59c86493665dbf5f24b1d1a3fc", size = 37778, upload-time = "2026-03-10T16:59:29.614Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/14/14/9de0da406b56f72c3e87a14ba06ba5436c2790a934a1a1273f38ca9b997e/mkdocs_revealjs-0.8.5-py3-none-any.whl", hash = "sha256:a26de6ce2c5465242cdb7cfbf0f0ebf0ed91ece89b059ab0372acc4198e476e9", size = 38667, upload-time = "2026-03-10T16:59:28.353Z" },
 ]
 
 [[package]]
