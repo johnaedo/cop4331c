@@ -131,9 +131,9 @@ extra_css:
     - https://cdn.jsdelivr.net/gh/Enveloppe/_static@refs/heads/master/dist/styles.css
 extra:
   SEO: '_assets/meta/logo.png'
-  comments: False
+  comments: $comments
   attachments: '_assets/img/'
-  no-auto-h1: True
+  no-auto-h1: $auto_h1
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Enveloppe/
