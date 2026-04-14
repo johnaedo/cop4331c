@@ -112,6 +112,7 @@ plugins:
       tags_file: tags.md
   - callouts
   - glightbox
+  - revealjs
 hooks:
   - overrides/hooks/on_page_markdown.py
   - overrides/hooks/on_env.py
