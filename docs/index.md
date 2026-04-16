@@ -4,16 +4,7 @@ site-folder: docs
 hide:
   - toc
 ---
-<<<<<<< HEAD
 ![cop4331c-banner.svg](./_assets/images/cop4331c-banner.svg)
-=======
-# COP 4331C
-
-**Processes of Object Oriented Software Design**  
-University of Central Florida · Department of Computer Science · Dr. John Aedo
-
----
->>>>>>> main
 
 Welcome to the course notes site for COP 4331C. This is the home for material that's too cumbersome for Webcourses or doesn't render well there — reference docs, walkthroughs, live-code demos, and slide decks all live here.
 
