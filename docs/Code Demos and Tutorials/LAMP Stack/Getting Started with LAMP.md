@@ -1,6 +1,13 @@
 ---
 share_cop4331c: "true"
 site-folder: docs/Code Demos and Tutorials/LAMP Stack
+tags:
+  - linux
+  - apache
+  - mysql
+  - php
+  - hosting
+  - dns
 ---
 
 > [!warning]
