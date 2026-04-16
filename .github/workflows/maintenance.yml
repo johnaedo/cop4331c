@@ -67,7 +67,7 @@ jobs:
             UNUSED=()
             while IFS= read -r img; do
               BASENAME=$(basename "$img")
-              if ! grep -r --include="*.md" -q "$BASENAME" docs/_assets/images; then
+              if ! grep -r --include="*.md" -q "$BASENAME" docs/; then
                 UNUSED+=("$img")
               fi
             done < <(find docs/_assets/images -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" -o -iname "*.gif" -o -iname "*.webp" -o -iname "*.svg" \))
