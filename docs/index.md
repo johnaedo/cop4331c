@@ -28,21 +28,21 @@ Welcome to the course notes site for COP 4331C. This is the home for material th
 ### :material-code-braces: Code Demos & Tutorials
 Step-by-step walkthroughs for assignments and live-coding lectures. Each demo is self-contained — start from the top or jump to the section you need.
 
-[Browse demos →]([index](Code%20Demos%20and%20Tutorials/index.md))
+[Browse demos →](./Code%20Demos%20and%20Tutorials/index.md)
 </div>
 
 <div class="resource-card" markdown>
 ### :material-presentation: Lecture Slides
 Slide decks published after each class. Use these to review concepts, catch up if you missed a session, or follow along in real time.
 
-[Browse slides →]([index](Lectures/index.md))
+[Browse slides →](index.md)
 </div>
 
 <div class="resource-card" markdown>
 ### :material-clipboard-list: Assignment Guides
 Detailed setup instructions, requirements clarifications, and grading notes for each project. Check here before Webcourses for the most current version.
 
-[Browse guides →]([index](Assignments/index.md))
+[Browse guides →](./Assignments/index.md)
 </div>
 
 </div>
