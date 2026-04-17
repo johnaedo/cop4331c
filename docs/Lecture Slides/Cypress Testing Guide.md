@@ -1,5 +1,5 @@
 ---
-theme: css/dracula.css
+theme: revealjs
 height: "1080"
 width: "1920"
 share_cop4331c: "true"
