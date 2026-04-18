@@ -17,11 +17,6 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: Debug - Mkdocs Environment
-        run: |
-          uv pip show mkdocs-revealjs
-          uv run python -c "import mkdocs_revealjs; print(mkdocs_revealjs.__file__)"
-          uv run mkdocs --version
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -38,6 +33,12 @@ jobs:
 
       - name: Install dependencies
         run: uv sync --python 3.13
+
+      - name: Debug - Mkdocs Environment
+        run: |
+          uv pip show mkdocs-revealjs
+          uv run python -c "import mkdocs_revealjs; print(mkdocs_revealjs.__file__)"
+          uv run mkdocs --version
 
       - name: Build and deploy
         env:
