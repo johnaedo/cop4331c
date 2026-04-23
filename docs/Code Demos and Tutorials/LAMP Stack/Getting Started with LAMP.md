@@ -11,7 +11,7 @@ tags:
 ---
 
 > [!warning]
-> My work machines are either Linux or MacOS.  The examples you see here from the local machine (i.e. your computer) will be using the Bash command shell.  Windows users will need to adjust your slashes and maybe directory locations as appropriate.
+> My work machines are either Linux or MacOS.  The examples you see here from the local machine (i.e. your computer) will be using the zsh command shell.  Windows users will need to adjust your slashes and maybe directory locations as appropriate.
 
 Notes for LAMP stack creation using Digital Ocean – Instructions to recreate the color app
 
