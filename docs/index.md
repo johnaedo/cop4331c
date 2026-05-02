@@ -3,6 +3,7 @@ share_cop4331c: "true"
 site-folder: docs
 hide:
   - toc
+  - navigation
 ---
 ![cop4331c-banner.svg](./_assets/images/cop4331c-banner.svg)
 
