@@ -312,7 +312,7 @@ mkdir LAMPAPI
 ### Download the LAMP Stack Project Files from Webcourses
 
 In Webcourses, under the `Week 1` Module, there's a file called `"LAMP Stack.zip"`
-You can also download the file from my website:  [LAMP Stack.zip]("https://teaching.johnaedo.com/_assets/files/LAMP%20Stack.zip")
+You can also download the file from my website:  [LAMP Stack.zip](https://teaching.johnaedo.com/_assets/files/LAMP%20Stack.zip)
 Download that to your PC.
 
 Decompress the file.  It doesn't matter where as we'll be uploading its files to the server.
