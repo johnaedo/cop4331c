@@ -49,8 +49,8 @@ Go to [https://marketplace.digitalocean.com/apps/lamp](https://marketplace.digit
 
 ### Configure your Storage, CPU, and Transfer Plan
 
-[Open: Pasted image 20260517154507.png](../../_assets/images/25dcedda9ac12cde048b463570c12bb8_MD5.jpg)
-![Open: Pasted image 20260517154507.png](../../_assets/images/25dcedda9ac12cde048b463570c12bb8_MD5.jpg)
+[Open: Pasted image 20260517154507.png](../../_assets/images/screenshot-digitalocean-choose-plan.jpg)
+![Open: Pasted image 20260517154507.png](../../_assets/images/screenshot-digitalocean-choose-plan.jpg)
 #### Scroll Down More!
 
 ### Configure Your Authentication
