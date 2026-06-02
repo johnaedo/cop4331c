@@ -73,6 +73,8 @@ At the prompt:
 ```bash
 ssh root@lamp.johnaedo.com
 ```
+> [!IMPORTANT]
+> Remember to replace `lamp.johnaedo.com` with your domain
 
 #### On MacOS
 `CMD + Space`, then type in 'terminal'
