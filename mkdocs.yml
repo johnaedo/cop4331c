@@ -91,10 +91,6 @@ plugins:
   - search
   - meta-descriptions
   - awesome-pages
-  - blog:
-      blog_dir: blog
-      blog_toc: true
-      post_readtime_words_per_minute: 300
   - git-revision-date-localized:
       type: date
       fallback_to_build_date: true
@@ -139,11 +135,6 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Enveloppe/
-  blog_list:
-    pagination: true
-    pagination_message: true
-    pagination_translation: 'posts in'
-    no_page_found: 'No pages found!'
   hooks:
     strip_comments: true
     fix_heading: true
